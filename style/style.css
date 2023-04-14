@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+html {
+  background-color: #e6e6e7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.image-container {
+  background-image: url(../img/background-image1.png);
+  background-repeat: no-repeat;
+  background-size: 33% 63%;
+  background-position: right top;
+}
+
+.mobile-container {
+  color: white;
+  border-radius: 10px;
+}
+.mobile-container .topnav {
+  position: relative;
+}
+.mobile-container .topnav .active img {
+  width: 240px;
+  position: absolute;
+  top: 15px;
+  left: 315px;
+}
+.mobile-container .topnav .burger-menu {
+  display: flex;
+}
+.mobile-container .topnav .burger-menu a:first-child {
+  position: absolute;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.mobile-container .topnav #myLinks {
+  display: none;
+}
+.mobile-container .topnav .icon {
+  position: absolute;
+  top: 41px;
+  left: 274px;
+}
+.mobile-container .topnav .icon i {
+  font-size: 45px;
+  color: black;
+}
+
+.div-for-grid {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 160px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.div-for-grid .rotate {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 44%;
+  left: 2.5%;
+}
+.div-for-grid .rotate h3 {
+  font-size: 20px;
+}
+.div-for-grid .images {
+  margin-left: 67px;
+  position: relative;
+}
+.div-for-grid .images .bouquet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-for-grid .images .bouquet h3 {
+  position: absolute;
+  color: white;
+}
+.div-for-grid .images .flex-direction {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-for-grid .images .flex-direction h3 {
+  position: absolute;
+  color: white;
+}
+.div-for-grid .images > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.div-for-grid .images > div:first-child .flower {
+  display: flex;
+}
+.div-for-grid .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 40px;
+}
+.div-for-grid .icons i {
+  display: block;
+  margin-top: 15px;
+}
+.div-for-grid .icons i::before {
+  font-size: 30px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evcalipt {
+  background-image: url(../img/background-image2.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: left top;
+  background-size: 50% 100%;
+  height: 100%;
+}
+.evcalipt > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 200px;
+}
+.evcalipt > div:last-child h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #81a459;
+}
+.evcalipt .love-bouquet {
+  width: 50%;
+  margin: 0 auto;
+  margin-right: 500px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+.evcalipt .love-bouquet div {
+  margin-top: 20px;
+}
+.evcalipt .love-bouquet div h2 {
+  font-size: 35px;
+}
+.evcalipt .love-bouquet div:last-child {
+  display: flex;
+  align-items: center;
+}
+.evcalipt .love-bouquet div:last-child a {
+  color: #81a459;
+  margin-right: 10px;
+}
+.evcalipt .love-bouquet div:last-child a i {
+  font-size: 35px;
+}
+.evcalipt .love-bouquet div:last-child button {
+  margin-right: 10px;
+  background-color: #81a459;
+  width: 105px;
+  height: 28px;
+  color: white;
+  border: none;
+  transition: 0.4s;
+}
+.evcalipt .love-bouquet div:last-child button:hover {
+  background-color: transparent;
+  color: #81a459;
+  border: 1px solid #81a459;
+}
+
+.girl {
+  background-image: url(../img/DSC052093.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+}
+.girl div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(189, 181, 181, 0.432);
+  width: 35%;
+  height: 620px;
+  font-size: 25px;
+  color: white;
+  margin-left: 200px;
+}
+
+.new-season {
+  margin-top: 40px;
+}
+.new-season h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #81a459;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider > div {
+  padding: 10px;
+}
+.slider > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider button {
+  background-color: transparent;
+  border: 1px solid #81a459;
+  width: 150px;
+  height: 30px;
+  color: #81a459;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.contacts {
+  background-image: url(../img/background-image3.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: right top;
+  background-size: 60% 100%;
+  height: 100%;
+}
+.contacts > div:first-child {
+  margin-top: 100px;
+}
+.contacts > div:first-child h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #81a459;
+}
+.contacts > div:last-child {
+  background-image: url(../img/background-image4.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: left bottom;
+  background-size: 50% 100%;
+  height: 100%;
+}
+.contacts > div:last-child .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 35%;
+  height: 620px;
+  font-size: 25px;
+  color: black;
+  margin-left: 500px;
+}
+.contacts > div:last-child .contact-info h3 {
+  font-size: 25fconpx;
+  margin-top: 25px;
+}
+.contacts > div:last-child .contact-info > div {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.contacts > div:last-child .contact-info .info-icons {
+  width: 50%;
+  justify-content: space-between;
+}
+.contacts > div:last-child .contact-info .info-icons i {
+  font-size: 40px;
+}
+.contacts > div:last-child .contact-info p {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer > div {
+  height: 100%;
+  align-items: center;
+}
+footer > div:last-child {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div:last-child a {
+  text-transform: uppercase;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

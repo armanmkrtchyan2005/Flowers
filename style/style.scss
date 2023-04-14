@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+@mixin text-style {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin text-color {
+  position: absolute;
+  color: white;
+}
+html {
+  background-color: #e6e6e7;
+}
+a {
+  text-decoration: none;
+}
+
+.image-container {
+  background-image: url(../img/background-image1.png);
+  background-repeat: no-repeat;
+  background-size: 33% 63%;
+  background-position: right top;
+}
+
+.mobile-container {
+  color: white;
+  border-radius: 10px;
+  .topnav {
+    position: relative;
+    .active {
+      img {
+        width: 240px;
+        position: absolute;
+        top: 15px;
+        left: 315px;
+      }
+    }
+    .burger-menu {
+      display: flex;
+      a {
+        &:first-child {
+          position: absolute;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+      }
+    }
+    #myLinks {
+      display: none;
+    }
+
+    .icon {
+      position: absolute;
+      top: 41px;
+      left: 274px;
+      i {
+        font-size: 45px;
+        color: black;
+      }
+    }
+  }
+}
+
+.div-for-grid {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 160px;
+  justify-content: center;
+  align-items: flex-start;
+  .rotate {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 44%;
+    left: 2.5%;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .images {
+    margin-left: 67px;
+    position: relative;
+    .bouquet {
+      @include text-style();
+      h3 {
+        @include text-color();
+      }
+    }
+    .flex-direction {
+      @include text-style();
+      h3 {
+        @include text-color();
+      }
+    }
+    > div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      &:first-child {
+        .flower {
+          display: flex;
+        }
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 40px;
+    i {
+      display: block;
+      margin-top: 15px;
+      &::before {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evcalipt {
+  background-image: url(../img/background-image2.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: left top;
+  background-size: 50% 100%;
+  height: 100%;
+  > div {
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: 200px;
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        color: #81a459;
+      }
+    }
+  }
+  .love-bouquet {
+    width: 50%;
+    margin: 0 auto;
+    margin-right: 500px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    div {
+      margin-top: 20px;
+      h2 {
+        font-size: 35px;
+      }
+      &:last-child {
+        display: flex;
+        align-items: center;
+        a {
+          color: #81a459;
+          margin-right: 10px;
+          i {
+            font-size: 35px;
+          }
+        }
+        button {
+          margin-right: 10px;
+          background-color: #81a459;
+          width: 105px;
+          height: 28px;
+          color: white;
+          border: none;
+          transition: 0.4s;
+          &:hover {
+            background-color: transparent;
+            color: #81a459;
+            border: 1px solid #81a459;
+          }
+        }
+      }
+    }
+  }
+}
+
+.girl {
+  background-image: url(../img/DSC052093.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(189, 181, 181, 0.432);
+    width: 35%;
+    height: 620px;
+    font-size: 25px;
+    color: white;
+    margin-left: 200px;
+  }
+}
+.new-season {
+  margin-top: 40px;
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #81a459;
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div {
+    padding: 10px;
+    > div {
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  button {
+    background-color: transparent;
+    border: 1px solid #81a459;
+    width: 150px;
+    height: 30px;
+    color: #81a459;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+}
+.contacts {
+  background-image: url(../img/background-image3.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: right top;
+  background-size: 60% 100%;
+  height: 100%;
+  > div {
+    &:first-child {
+      margin-top: 100px;
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        color: #81a459;
+      }
+    }
+    &:last-child {
+      background-image: url(../img/background-image4.png);
+      background-repeat: no-repeat;
+      width: 100%;
+      background-position: left bottom;
+      background-size: 50% 100%;
+      height: 100%;
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 35%;
+        height: 620px;
+        font-size: 25px;
+        color: black;
+        margin-left: 500px;
+        h3 {
+          font-size: 25fconpx;
+          margin-top: 25px;
+        }
+        > div {
+          display: flex;
+          margin-top: 20px;
+          align-items: center;
+        }
+        .info-icons {
+          width: 50%;
+          justify-content: space-between;
+          i {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 14px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-evenly;
+  align-items: center;
+  > div {
+    height: 100%;
+    align-items: center;
+    &:last-child {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-transform: uppercase;
+        color: black;
+      }
+    }
+  }
+}
